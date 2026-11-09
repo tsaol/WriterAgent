@@ -34,8 +34,6 @@ def exa_search(query: str) -> str:
 
 model = BedrockModel(
     # model_id="us.anthropic.claude-3-7-sonnet-20250219-v1:0",
-    # aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID"),
-    # aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY"),
     region_name=os.getenv("AWS_REGION", "us-west-2")
 )
 # Strands defaults to the Bedrock model provider using Claude 3.7 Sonnet. The model your agent is using can be retrieved by accessing model.config
